@@ -1,0 +1,168 @@
+Vectores y matrices, punteros, la relación entre punteros y vectores y matrices.
+
+Al declarar un vector indicamos el tipo y la cantidad de componentes (constante).
+Al usar un vector el índice de la primera posición es 0.
+
+El nombre de un vector es un puntero constante que contiene la dirección del primer elemento (&V[0]) -> *puntero
+
+El nombre de una matriz (int m[5][3]) es un puntero constante que contiene la dirección de la primera fila (&m[0])
+
+int f1(int m[5][3]);
+int f1(int m[][3]);
+int f1(int (*m)[3]);
+
+
+Registros: conjunto de valores de igual o distinto tipo que por su naturaleza (y lo que representan)
+deben ser tratados de manera conjunta.
+
+Se pueden crear nuevos tipos de datos para manejar de manera conjunta todos esos valores mediante:
+
+- structs
+- clases
+
+Clases y POO
+Clase: molde donde se definen las propiedades y el comportamiento que van a tener los objetos de esa clase.
+Objeto: variable o instancia de una clase. Cada objeto es único; se identifica mediante un nombre, tiene un estado
+(por el valor de las propiedades en un determinado momento).
+
+Diseño de las clases.
+Definición de las propiedades y el comportamiento (métodos).
+
+Parte privada: se definen las propiedades. Se consigue el ENCAPSULAMIENTO: cualquier acceso desde fuera de la clase
+a los datos de las variables de esa clase debe hacerse mediante métodos propios de esa clase.
+Todo lo que se defina en la parte privada de una clase SOLO PUEDE SER ACCEDIDO desde dentro de la clase.
+
+Parte pública: métodos (funciones de la clase).
+Pensamos en un objeto único al desarrollar los métodos
+
+gets()-> para que el mundo externo se entere de los valores de las datos que almacena el objeto
+sets()-> para asignar/cambiar los datos de las propiedades de los objetos.
+Constructor
+Destructor
+Cargar todo el objeto
+Mostrar todo el objeto
+
+Lee un registro/objeto del disco
+Escribe un un registro/objeto en un archivo
+
+Constructor/es 
+- Tiene el mismo nombre de la clase
+- No devuelve NADA. Puede o no recibir parámetros
+- Se ejecuta de manera automática cuando el objeto nace
+- Podemos asociar un código en ese momento, por ejemplo para inicializar las propiedades del objeto.
+
+Destructor
+- Tiene el mismo nombre de la clase, pero se antecede el caracter ~.
+- No devuelve NADA, ni recibe nada.
+- Se ejecuta de manera automática cuando el objeto muere.
+- Podemos asociar un código en ese momento, por ejemplo para las tareas necesarias.
+
+
+Sobrecarga de funciones: funciones distintas con el mismo nombre.
+Se tiene que diferenciar por los parámetros que reciben
+
+Valores por defecto para los parámetros: 
+void funcionA(int a=3, int b=5, const char *cad="nada"){
+***
+***
+}
+funcion();
+funcionA(10);
+funcionA(10,8);
+funcionA(10,8,"algo");
+
+Referencia: alias de una variable.
+
+Herencia: a partir de una clase base, crear un conjunto de clases derivadas.
+Para si es aplicable la herencia tenemos que preguntas si clase Derivada ES clase Base corresponde
+
+clase Derivada1:public Base{
+
+
+}
+
+clase Base{
+protected: mantiene la protección pero permite el acceso directo de las clases derivadas.
+};
+
+
+Composición: utilizar un objeto de una clase como propiedad de otra.
+Clase tiene objeto de otra clase
+
+
+Archivos
+FILE *p;-> las variables de este tipo permiten establecer la conexión con el archivo físico y nuestro programa
+
+p=fopen("archivo.dat","ab"); (modos "wb", "ab", "rb", "rb+" permite leer y escribir)
+
+if(p==NULL) return-> NULL es el valor cuando el archivo no puede/crearse.
+
+fread()->traía data del disco a la memoria
+
+fwrite()-> lleva data de la memoria al disco
+
+fclose(p)-> cierra el archivo
+
+fseek()-> desplaza el puntero dentro del archivo
+
+ftell(p)->devuelve la cantida de bytes desde el inicio del archivo hasta la posición actual del puntero
+
+
+Acciones sobre los archivos
+
+A->Alta
+B->Baja
+M->Modificación
+L->Listado
+
+Alta: agregar registro/s
+Baja: lógica y física.
+	Lógica: modificar el valor de un campo (booleano) que se agrega para ese efecto a los campos de datos
+	Física: eliminación del registro en el archivo.
+Modificación: modificar el valor de uno o varios campos de un registro
+Listado: mostrar los registros de un archivo (mostrarlo todo, con filtros->que cumplan alguna condición)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Parte
+
+
+
+Archivos

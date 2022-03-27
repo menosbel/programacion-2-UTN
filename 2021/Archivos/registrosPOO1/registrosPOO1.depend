@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1630968203 source:c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 lunes\registrospoo1\main.cpp
+	<iostream>
+	<cstring>
+	"funciones.h"
+
+1630968319 c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 lunes\registrospoo1\funciones.h
+
+1633735424 source:c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	"funciones.h"
+	"Materia.h"
+
+1633274047 c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\funciones.h
+	"Materia.h"
+
+1633272454 c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\include\materia.h
+	<cstring>
+
+1633272427 source:c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\src\materia.cpp
+	<iostream>
+	<clocale>
+	"Materia.h"
+
+1633272454 c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\materia.h
+	<cstring>
+
+1633272427 source:c:\users\belen\documents\cursos\programacion-ii\archivos\registrospoo1\materia.cpp
+	<iostream>
+	<clocale>
+	"Materia.h"
+

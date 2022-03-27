@@ -1,0 +1,71 @@
+ARCHIVOS
+
+Clases-> definir el formato de los archivos (propiedades de la clase).
+
+Objetos de la clase definida tanto para escribir en la memoria y llevar al disco,
+como para leer del disco y llevar a la memoria.
+
+FILE *pAr;
+
+pAr=fopen("ruta_nombre_archivo","modo")///abrir o crear archivos
+Modo de apertura:
+
+"rb"->read. Permite leer
+"ab"->append. Permite escribir/agregar datos en un archivo. Si el archivo no existe lo crea.
+"wb"-> write. Permite escribir datos en un archiv. SIEMPRE CREA UN ARCHIVO NUEVO.
+
+if(pAr==NULL)-> no se pudo abrir el archivo.
+
+///reg: variable que tiene los datos que quiero escribir en el disco. Validados
+
+fwrite(&reg, sizeof reg, 1, pAr)///escribir datos en el archivo
+
+fread(&reg, sizeof reg, 1, pAr)///leer datos desde un archivo
+
+fclose(pAr)///cierra la conexión del programa con el archivo
+
+fseek()-> permite ubicar el puntero del archivo en una posición definida.
+
+ftell() -> devuelve la cantidad de bytes que hay desde el ppio del archivo hasta la posicion actual del puntero FILE.
+Para saber la cantidad total tengo que poner el puntero al final con fseek.
+
+fseek(PFILE,desplazamiento, desde_donde)
+desplazamiento-> número que representa la cantidad de bytes que me quiero mover
+desde_donde:
+		0	SEEK_SET->PRINCIPIO
+		1	SEEK_CUR->POSICION ACTUAL
+		2	SEEK_END->FIN DEL ARCHIVO
+
+
+fseek(p,0,0)->ubico el puntero al principio del archivo
+fseek(p, 0,2)->ubico el puntero al final del archivo
+	A->Alta: agregar 1 registro.
+
+	B->Baja
+	M->Modificación: cambiar el valor de alguna/s de las propiedad/es
+	
+	L->Listado/s
+
+Baja: 
+
+Física-> volver a hacer el archivo omitiendo los registros que se quieren borrar.
+
+Lógica-> consiste en modificar el valor de una de las propiedades (o campo), de manera tal
+que el sistema ignore a ese registro. Por lo general se agrega un campo booleano a los campos
+de información, y ese es el campo que se usa para indicar si un registro está  o no activo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

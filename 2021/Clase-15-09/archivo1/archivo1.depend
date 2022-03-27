@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1631110542 source:c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\archivo1\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"clases.h"
+	"funciones.h"
+
+1631110525 c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\archivo1\clases.h
+
+1631112033 c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\archivo1\funciones.h
+
+1631716798 source:c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\15-09\archivo1\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"clases.h"
+	"funciones.h"
+
+1631715793 c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\15-09\archivo1\clases.h
+
+1631716807 c:\users\danie\documents\curso ejemplos c\programacion ii\2021 c2 miercoles\15-09\archivo1\funciones.h
+
