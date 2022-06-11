@@ -15,34 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="clscadena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Punto1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ciudad.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AuxPunto1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Medicion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Punto1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ciudad.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AuxPunto1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Medicion.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
