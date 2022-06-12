@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8cfb99bb-f165-43e1-9ed7-7387d5ed472d}</ProjectGuid>
-    <RootNamespace>SimulacroParcial2B</RootNamespace>
+    <ProjectGuid>{77a592c2-f717-45a3-b7d5-d621fbb14141}</ProjectGuid>
+    <RootNamespace>SimulacroParcial2D</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>SimulacroParcial2C</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,19 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AuxPunto1.cpp" />
-    <ClCompile Include="Ciudad.cpp" />
-    <ClCompile Include="Fecha.cpp" />
-    <ClCompile Include="InformeUno.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Medicion.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AuxPunto1.h" />
-    <ClInclude Include="Ciudad.h" />
-    <ClInclude Include="Fecha.h" />
-    <ClInclude Include="InformeUno.h" />
-    <ClInclude Include="Medicion.h" />
+    <ClCompile Include="myMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
